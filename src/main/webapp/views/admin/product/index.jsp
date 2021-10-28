@@ -63,7 +63,7 @@
 				class="btn btn-success col-1"
 				href="${ pageContext.request.contextPath }/admin/products/create">Create</a>
 		</div>
-		  <table class="table table-strip mt-3">
+		  <table class="table table-bordered table-dark mt-3">
 			<thead>
 				<tr>
 					<td>Id</td>

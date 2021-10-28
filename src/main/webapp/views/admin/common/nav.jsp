@@ -12,7 +12,7 @@
             <li><a href="${ pageContext.request.contextPath }/admin/categories">Categories</a></li>
             <li><a href="${ pageContext.request.contextPath }/admin/products">Product</a></li>
             <li><a href="${ pageContext.request.contextPath }/admin/users/productInvoice">Invoice Management</a></li>
-            <%-- <li><a href="${ pageContext.request.contextPath }/admin/report/inventory-by-category">Report</a></li> --%>
+            <li><a href="${ pageContext.request.contextPath }/admin/report">Report</a></li>
             <li class="has-children">
                 <a href="#">Account</a>
                 <ul class="dropdown">

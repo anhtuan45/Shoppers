@@ -1,5 +1,6 @@
 package com.ass.java5.entity;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -23,7 +24,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(name = "products")
-public class Product {
+public class Product implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")

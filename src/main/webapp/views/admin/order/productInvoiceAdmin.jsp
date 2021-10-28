@@ -48,7 +48,7 @@
 			</div>
 			
 			<div>
-				<button class="btn btn-primary mt-4">Lọc</button>
+				<button class="btn btn-primary mt-4">Filter</button>
 				<a href="${ pageContext.request.contextPath }/admin/users/productInvoice"
 					class="btn btn-danger mt-4" type="reset">
 					Reset

@@ -70,7 +70,7 @@
 				class="btn btn-success col-1"
 				href="${ pageContext.request.contextPath }/admin/users/create">Create</a>
 		</div>
-		<table class="table table-strip mt-3" border="1">
+		<table class="table table-bordered table-dark mt-3" border="1">
 			<thead>
 				<tr>
 					<td>Id</td>

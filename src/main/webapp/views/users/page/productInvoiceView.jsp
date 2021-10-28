@@ -137,7 +137,7 @@
 		
 		<div>
 			<ul class="pagination">
-				<c:forEach begin="0" end="${ pageData.totalPages > 0 ? pageData.totalPages-1 : 0}" varStatus="page">
+				<c:forEach begin="0" end="${ pageData.totalPages > 0 ? pageData.totalPages - 1 : 0}" varStatus="page">
 					<li class="page-item">
 						<a class="page-link" href="${ pageContext.request.contextPath }/users/home/productInvoice/${id}?page=${page.index}&limit=10">${ page.index + 1 }</a>
 					</li>
