@@ -77,7 +77,6 @@ public class ProductController {
 
 	@GetMapping("/create")
 	public String create(@ModelAttribute("product") ProductDTO productDTO, Model model) {
-		// list danh muc
 		List<Category> cate = this.categoryRepository.findByCategoryActivate();
 		model.addAttribute("categoryData", cate);
 

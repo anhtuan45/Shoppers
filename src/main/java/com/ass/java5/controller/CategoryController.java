@@ -40,9 +40,6 @@ public class CategoryController {
 	
 	@GetMapping()
 	public String index(Model model) {
-//		List<Category> categories = categoryRepository.findAll();
-//		model.addAttribute("listCategory", categories);
-		
 		String sortBy = request.getParameter("sort_by");
 		String sortDirection = request.getParameter("sort_direction");
 		String pageParam = request.getParameter("page");

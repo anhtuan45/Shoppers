@@ -36,7 +36,9 @@ public class ReportController {
 		
 		Page<Report> pageData =  this.daoOrderDetail.revenueByCategory(pageable);
 		Page<ProductReport> pagedata2 = this.daoOrderDetail.getProductReport(pageable);
+		double total = this.daoOrderDetail.totalOrder();
 		
+		model.addAttribute("totalOrder", total);
 		model.addAttribute("pageData", pageData);
 		model.addAttribute("pageData2", pagedata2);
 		

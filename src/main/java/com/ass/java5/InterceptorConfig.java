@@ -14,6 +14,7 @@ public class InterceptorConfig implements WebMvcConfigurer{
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
+		//addPathPatterns("/**") : muốn intercepter hoạt động trên đường dẫn nào
 		registry.addInterceptor(authenInterceptor)
 			.addPathPatterns("/admin/**","/users/**")
 			.excludePathPatterns("/login","/users/home","/pageError");

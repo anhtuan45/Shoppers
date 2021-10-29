@@ -21,6 +21,9 @@ public interface Order_DetailsRepository extends JpaRepository<Order_Details, In
 		+ "FROM Order_Details d GROUP BY d.product.category ORDER BY (s) DESC")
 	Page<Report> revenueByCategory(Pageable pageable);
 	
+	@Query("SELECT SUM(od.price * od.quantity) FROM Order_Details od")
+    public Double totalOrder();
+	
 	@Query("SELECT new ProductReport(od.product, od.product.category, SUM(od.price * od.quantity), SUM(od.quantity) AS s)  FROM Order_Details od GROUP BY od.product ORDER BY (s) DESC")
 	public Page<ProductReport> getProductReport(Pageable pageable);
 }

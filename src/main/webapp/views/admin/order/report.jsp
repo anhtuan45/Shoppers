@@ -29,7 +29,7 @@
 
 	<div class="container my-2">
 		
-		<h2 class="text-center">Statistics by category</h2>
+		<h2 class="text-center" style="color: red;">Statistics by category</h2>
 		
 		<table border="1" class="table table-bordered table-dark mt-3">
 			<thead>
@@ -53,6 +53,8 @@
 			</tbody>
 		</table>
 		
+		<h5 style="text-align: right;color:black">Total : ${ totalOrder } $</h5>
+		
 		<div class="mx-auto text-white text-center" style="width: 200px;">
 			<ul class="pagination">
 				<c:forEach begin="0" end="${ pageData.totalPages > 0 ? pageData.totalPages - 1 : 0}" varStatus="page">
@@ -67,7 +69,7 @@
 	<hr/>
 	
 	<div class="container my-2">
-		<h2 class="text-center">Statistics by product</h2>
+		<h2 class="text-center" style="color: red;">Statistics by product</h2>
 		<table border="1" class="table table-bordered table-dark mt-3">
 			<thead>
 				<tr>
@@ -92,6 +94,8 @@
 
 			</tbody>
 		</table>
+		
+		<h5 style="text-align: right;color:black">Total : ${ totalOrder } $</h5>
 		
 		<div class="mx-auto text-white text-center" style="width: 200px;">
 			<ul class="pagination">

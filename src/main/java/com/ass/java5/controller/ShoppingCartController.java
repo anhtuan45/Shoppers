@@ -151,12 +151,11 @@ public class ShoppingCartController {
 				tongGia += item.getPrice();
 			}
 			
-			donHang += "==> Total amount : "+tongGia+"$";
+			donHang += " ==> Total amount : "+tongGia+"$";
 			mailService.sendEmail(email,"Your order Information",donHang);
 			
 		}
 		cart.clear();
-		//return "redirect:/users/home/cart/view";
 		return "users/page/thankyou";
 	}
 	

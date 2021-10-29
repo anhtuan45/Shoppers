@@ -173,7 +173,7 @@
 			</tbody>
 		</table>
 		
-		<div>
+		<div class="mx-auto text-white text-center" style="width: 200px;">
 			<ul class="pagination">
 				<c:forEach begin="0" end="${ pageData.totalPages > 0 ? pageData.totalPages-1 : 0}" varStatus="page">
 					<li class="page-item">

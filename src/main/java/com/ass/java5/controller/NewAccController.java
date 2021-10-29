@@ -69,43 +69,4 @@ public class NewAccController {
 		}
 	}
 	
-//	@PostMapping("/createNewAcc")
-//	public String createAcc(Model model,@RequestParam Integer emailCheck ,@Valid @ModelAttribute("user") UserDTO userDTO , BindingResult result) {
-//		if(result == null) {
-//			System.out.println("Có lỗi" + result.getAllErrors());
-//			model.addAttribute("errors", result.getAllErrors());
-//			return "/auth/createnewAcc";
-//		}else {
-//			if(check == emailCheck) {
-//				System.out.println("Thành công");
-//				User entity = mapper.convertToEntity(userDTO);
-//				
-//				String hashedPass = HashUtil.hash(entity.getPassword());
-//				entity.setPassword(hashedPass);
-//				
-//				this.repository.save(entity);
-//				return "redirect:/emailCheck";
-//			}else {
-//				System.out.println("Thất bại");
-//				return "auth/emailCheck";
-//			}
-//			
-//			
-//		}
-//	}
-//	
-//	@PostMapping("/signUp")
-//	public String sigup(
-//			@RequestParam String username,
-//			@RequestParam String password,
-//			@RequestParam String email) {
-//		user.setUsername(username);
-//		user.setPassword(password);
-//		user.setActivated(1);
-//		user.setPhoto(null);
-//		user.setEmail(email);
-//		user.setAdmin(0);
-//		return "redirect:/emailChek";
-//	}
-	
 }

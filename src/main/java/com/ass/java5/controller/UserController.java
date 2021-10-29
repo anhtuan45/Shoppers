@@ -43,9 +43,6 @@ public class UserController {
 	@GetMapping()
 	public String index(Model model) {
 		
-//		List<User> entity = this.userRepository.findAll();
-		//model.addAttribute("listUser", entity);
-		
 		String sortBy = request.getParameter("sort_by");
 		String sortDirection = request.getParameter("sort_direction");
 		String pageParam = request.getParameter("page");
@@ -115,9 +112,6 @@ public class UserController {
 	//Delete user
 	@PostMapping("/delete/{id}")
 	public String detete(@PathVariable("id") Integer id) {
-//		User entity = userRepository.getOne(id);
-//		entity.setActivated(0);
-//		this.userRepository.save(entity);
 		this.userRepository.deleteById(id);
 		return "redirect:/admin/users";
 	}
